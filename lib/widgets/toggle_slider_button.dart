@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:sliding_switch/sliding_switch.dart';
 import 'package:typedef_example/widgets/color_area.dart';
 
-// ignore: must_be_immutable
 class ToggleSliderButton extends StatelessWidget {
-  ToggleSliderButton({super.key, required this.colorChanged});
+  const ToggleSliderButton({super.key, required this.colorChanged});
 
+  /*
   ToggleSliderButton.withoutCallback({
     super.key,
   });
+  */
 
-  OnColorChanged? colorChanged;
+  final OnColorChanged? colorChanged;
 
   @override
   Widget build(BuildContext context) => Wrap(

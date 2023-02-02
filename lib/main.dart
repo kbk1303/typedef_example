@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:typedef_example/widgets/color_area.dart';
+import 'package:typedef_example/widgets/color_area_generic.dart';
 import 'package:typedef_example/widgets/color_area_stateless.dart';
 
 void main() {
@@ -59,6 +60,7 @@ class MyHomePage extends StatelessWidget {
         child: Wrap(
           spacing: 10,
           children: <Widget>[
+            const ColorAreaGeneric(),
             const ColorArea(),
             ColorAreaStateless(),
           ],

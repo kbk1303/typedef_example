@@ -24,6 +24,7 @@ class ColorAreaStateless extends StatelessWidget {
             }
             return Column(
               children: <Widget>[
+                //sliding switch
                 SlidingSwitch(
                   value: false,
                   width: 250,
@@ -63,4 +64,8 @@ class ColorAreaStateless extends StatelessWidget {
           },
         ),
       );
+
+  void dispose() {
+    _changedBloc.dispose();
+  }
 }
